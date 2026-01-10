@@ -47,7 +47,7 @@ export function buildSelectGroup(exams: ExamMetadata[]): SemesterGroup[] {
     }
 
     const groupList = Object.values(semesterGroups);
-    groupList.sort((a, b) => compareSemesterName(a.name, b.name));
+    groupList.sort((a, b) => compareSemesterName(b.name, a.name));
     return groupList;
 }
 
