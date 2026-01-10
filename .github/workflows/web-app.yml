@@ -3,7 +3,7 @@ name: web-app
 on:
     push:
         branches: ["master", "release"]
-        
+
     pull_request:
         branches: ["master"]
 
@@ -44,7 +44,7 @@ jobs:
             - name: build and push
               uses: docker/build-push-action@v6
               with:
-                  context: .
+                  context: ./web-app/
                   file: ./web-app/Dockerfile
                   push: ${{ github.event_name != 'pull_request' }}
                   tags: ${{ steps.meta.outputs.tags }}
