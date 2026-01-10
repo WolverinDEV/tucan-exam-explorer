@@ -15,7 +15,7 @@ export class MailService {
         const url = new URL(env.SMTP_URL);
 
         if (!env.SMTP_SENDER) throw new Error("SMTP_SENDER is not set");
-        this.sender = env.SMTP_URL;
+        this.sender = env.SMTP_SENDER;
 
         this.transport = nodemailer.createTransport({
             host: decodeURIComponent(url.hostname),
