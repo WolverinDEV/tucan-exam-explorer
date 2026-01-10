@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
 	import * as Form from '$lib/components/ui/form';
+	import { IconInfoCircle } from '@tabler/icons-svelte';
 	import PageFooter from '../../lib/components/page/page-footer.svelte';
 	import Input from '../../lib/components/ui/input/input.svelte';
 
@@ -30,14 +31,22 @@
 					{#snippet children({ props })}
 						<Form.Label>E-Mail</Form.Label>
 						<div class="flex flex-row">
-							<Input {...props} bind:value={$formData.email} disabled={$submitting} />
+							<Input
+								{...props}
+								bind:value={$formData.email}
+								disabled={$submitting}
+								placeholder="vorname.nachname"
+							/>
 							<span class="ml-[.5em] shrink-0 self-center text-sm text-foreground/70">
 								{data.emailSuffix}
 							</span>
 						</div>
 					{/snippet}
 				</Form.Control>
-				<Form.Description class="text-xs">Deine E-Mail wird nicht gespeichert!</Form.Description>
+				<Form.Description class="text-xs">
+					Deine E-Mail wird nur zum verifizieren deines Studentenstatusses verwendet. Es erfolgt
+					keine speicherung.
+				</Form.Description>
 				<Form.FieldErrors />
 			</Form.Field>
 			<Form.Button class="self-end" disabled={$submitting}>
