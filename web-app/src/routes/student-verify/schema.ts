@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const kFormSchema = z.object({
-    email: z.string().min(1).max(64).refine(data => /[a-z0-9\.\-+]/i.test(data)),
+    email: z.string().min(1).max(64).refine(data => /^[a-z0-9\.\-+]+$/ig.test(data), { error: "Ungültige Zeichen" }),
 });
 
 export type FormSchema = typeof kFormSchema;
