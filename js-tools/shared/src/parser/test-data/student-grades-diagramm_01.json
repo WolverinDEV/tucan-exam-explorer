@@ -1,0 +1,35 @@
+{
+    "context": {
+        "semesterName": "WiSe 2020/21",
+        "moduleId": "20-00-0018-iv",
+        "moduleName": "Computersystemsicherheit",
+        "examName": "mündliche / schriftliche Prüfung (Fachprüfung)",
+        "examDate": "Di, 2. Mär. 2021 17:00-19:30"
+    },
+    "scores": {
+        "distribution": {
+            "1,0": 106,
+            "1,3": 46,
+            "1,7": 50,
+            "2,0": 39,
+            "2,3": 32,
+            "2,7": 21,
+            "3,0": 32,
+            "3,3": 18,
+            "3,7": 8,
+            "4,0": 8,
+            "5,0": 17
+        },
+        "average": 2.019
+    },
+    "participation": {
+        "totalCount": 377,
+        "totalCountBWS": 0,
+        "missingCounts": {
+            "Annullierung Corona nach § 33b": 2,
+            "Entschuldigt": 2,
+            "Krankschreibung": 57,
+            "ohne Grund": 17
+        }
+    }
+}

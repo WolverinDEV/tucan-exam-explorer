@@ -1,0 +1,32 @@
+{
+    "context": {
+        "semesterName": "SoSe 2020",
+        "moduleId": "20-00-0006",
+        "moduleName": "Grundlagen der Informatik III",
+        "examName": "",
+        "examDate": ""
+    },
+    "scores": {
+        "distribution": {
+            "1,0": 2,
+            "1,3": 1,
+            "1,7": 3,
+            "2,0": 3,
+            "2,3": 1,
+            "2,7": 0,
+            "3,0": 0,
+            "3,3": 1,
+            "3,7": 0,
+            "4,0": 0,
+            "5,0": 0
+        },
+        "average": 1.818
+    },
+    "participation": {
+        "totalCount": 11,
+        "totalCountBWS": 0,
+        "missingCounts": {
+            "Krankschreibung": 1
+        }
+    }
+}

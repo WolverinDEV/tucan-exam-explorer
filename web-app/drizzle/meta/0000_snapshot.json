@@ -1,0 +1,95 @@
+{
+  "id": "ca6a27f0-ad75-4ba6-9e29-cdb0c394740d",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.exams": {
+      "name": "exams",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "timestamp": {
+          "name": "timestamp",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "semesterName": {
+          "name": "semesterName",
+          "type": "varchar(32)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "moduleId": {
+          "name": "moduleId",
+          "type": "varchar(32)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "moduleName": {
+          "name": "moduleName",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "examName": {
+          "name": "examName",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "participationTotal": {
+          "name": "participationTotal",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "participationMissing": {
+          "name": "participationMissing",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "gradeOverview": {
+          "name": "gradeOverview",
+          "type": "json",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'{}'::json"
+        },
+        "metadata": {
+          "name": "metadata",
+          "type": "json",
+          "primaryKey": false,
+          "notNull": false,
+          "default": "'{}'::json"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

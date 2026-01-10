@@ -1,0 +1,128 @@
+{
+    "ribbon": [
+        {
+            "display": "Übersicht",
+            "action": "tLoErwzJUNUxNIK1yHBMzTWclh1V3lI7aw46sr9I2iF47EXTKEVamGlU3Ky1mHdX59uruoZoVmxrdOVvqxy~ya-DevEcU6hOJmhZum4oGyaXIkpbRPtGGM-jhjbeXqbSkeUEJ6MwxWg1o0tu5sAgKP8SJD9wDts5qUyi1xEG-s9ntDykd~qZgy5Boh5qFSX1GImFwsDaoFKahJY_"
+        },
+        {
+            "display": "FB13 - Bau- und Umweltingenieurwissenschaften",
+            "action": "XbvGiR8hIydYJohC~lwcOHP0wUsO-C2HOYuBXCuM52D7hpkB41JrsOkvIwLA~fCFtE3377vt10ljffE0Gbz2vOPUvbLjaL5xXdPxANQSPlKkl5deO4cIZoucGrmxV6TxOgjMDJO8bQc7H8y~Xxf0fST8Nk1Zuvq7-cVnZaOfw8GyYABL7aI134OtVlvMJCPjpDO12rrmFLcSfKo_"
+        },
+        {
+            "display": "E: Fachgebiete der Mechanik",
+            "action": "vjTxZWPeg3xff8BTM-Y4cYITmG9JL4FLvBxdtipOm7rJH06C2k0Qh2T9bO8FqUhH5HqF5vQY5nFByjCCID-lSqSHSJ6XU7ixZiKbolCuRScI1RfGnty5qFkTauhMxTuafGBss0shnBVmm7jwQyi7VMzOBwhyk1gejHtHnELq8V4II9H2aS0rfn7ZJGejryRFYpQtsYYyg3lhDP4_"
+        },
+        {
+            "display": "",
+            "action": "dYuafOM0x9lWFfNQ3OA8H8~ktJb0Goe62ZQGn5fXM8nMVFZ9UqPtQ~AICErRArwpYhCxiKn09RDaP4pvLTQezyplg3rUWgUrT5F4Z-E1JOuQopHcakbz~a1tyMb-l67SD7QK8rt7K1rkUvWGr2m03-kzJ7x8sIbfZeUas9iyCtQSqYTo8nvFqppuk5c7xBoeLx3miaIzpifxi~VhJl8XAzy7Flbn8iKYhbo_"
+        }
+    ],
+    "events": [
+        {
+            "id1": 391393094305691,
+            "id2": 391393094360692,
+            "name": "13-E0-0007-vl Technische Mechanik II (BI)",
+            "lecturers": [
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "Mara Lena Koch"
+            ],
+            "date": "Do, 24. Apr. 2025 [13:30] - Fr, 25. Jul. 2025 [11:30]",
+            "type": "Vorlesung",
+            "metadata": []
+        },
+        {
+            "id1": 391393089537183,
+            "id2": 391393089589184,
+            "name": "13-E0-0008-ue Technische Mechanik II (BI) - Übung",
+            "lecturers": [
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "Mara Lena Koch"
+            ],
+            "date": "Do, 24. Apr. 2025 [09:50] - Do, 24. Jul. 2025 [11:30]",
+            "type": "Übung",
+            "metadata": []
+        },
+        {
+            "id1": 391393094578711,
+            "id2": 391393094512712,
+            "name": "13-E0-0010-tt Technische Mechanik II (BI) - Tutorium",
+            "lecturers": [
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "Mara Lena Koch"
+            ],
+            "date": "Mo, 28. Apr. 2025 [15:20] - Mo, 21. Jul. 2025 [17:00]",
+            "type": "Tutorium",
+            "metadata": []
+        },
+        {
+            "id1": 391393094584716,
+            "id2": 391393094597717,
+            "name": "13-E0-0019-tt Technische Mechanik II (G/UI) - Tutorium",
+            "lecturers": [
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "Mara Lena Koch"
+            ],
+            "date": "Mo, 28. Apr. 2025 [15:20] - Fr, 25. Jul. 2025 [15:10]",
+            "type": "Tutorium",
+            "metadata": []
+        },
+        {
+            "id1": 391393095952920,
+            "id2": 391393095992921,
+            "name": "13-E0-0019-ue Technische Mechanik II (G/UI) - Übung",
+            "lecturers": [
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "Mara Lena Koch"
+            ],
+            "date": "Mi, 23. Apr. 2025 [13:30] - Mi, 23. Jul. 2025 [15:10]",
+            "type": "Übung",
+            "metadata": []
+        },
+        {
+            "id1": 391393094542721,
+            "id2": 391393094574722,
+            "name": "13-E0-0019-vl Technische Mechanik II (G/UI)",
+            "lecturers": [
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "Lena Koch"
+            ],
+            "date": "Di, 22. Apr. 2025 [08:00] - Di, 22. Jul. 2025 [10:30]",
+            "type": "Vorlesung",
+            "metadata": []
+        },
+        {
+            "id1": 391393100172501,
+            "id2": 391393100127502,
+            "name": "13-E0-0022-vu Technische Mechanik IV",
+            "lecturers": [
+                "Prof. Dr.-Ing. Ralf Müller"
+            ],
+            "date": "Di, 22. Apr. 2025 [09:50] - Do, 24. Jul. 2025 [11:30]",
+            "type": "Vorlesung und Übung",
+            "metadata": []
+        },
+        {
+            "id1": 391393100094496,
+            "id2": 391393100091497,
+            "name": "13-E0-0023-pj Digitalisierung, KI und Data Science (a)",
+            "lecturers": [
+                "Prof. Dr.-Ing. Ralf Müller",
+                "Prof. Dr.-Ing. Dominik Schillinger",
+                "M.Sc. Henrik Hembrock"
+            ],
+            "date": "Fr, 25. Apr. 2025 [14:25] - Fr, 18. Jul. 2025 [17:45]",
+            "type": "Projekt",
+            "metadata": []
+        }
+    ],
+    "children": [
+        {
+            "display": "E1: FG Numerische Mechanik",
+            "action": "6Iu9vDs8ah7-8iucYyiKIizHjfnrGgT755rR31hQx-T6ZK5HT-RvhoL0T~WUGv4k0pzveYCad6DpH~tsMxDQH~FyVEc2y29Lk3-0-giD7ZDoMqwtON~9zIeY8EESwXDSQ9ylmNf3B-YtlS3dl7YvZ8EI7xFY4B8e4YUPIiH~YR9JulYvoOUOzPa6~T8fv5NH-nScsMkwkm2WkO8_"
+        },
+        {
+            "display": "E2: FG Kontinuumsmechanik",
+            "action": "cgz2GNO-ixnX5xY9lrA2M8941UmvEy2dCjEeLVdEU8MWSU20tDqecX-6CSsHuW44vZQ7Qb75yioFr9Y9uJu6Lj3N9oxCbGx8gEkPIpJUgSKUrepGMd1jdeH1-SFuhEI5LIXtqlP~LJby22TG3uPSCw5wQMzD8aElYDCTOi1uU1XL54~xGajLDGVZ2nxSzVElrGV-T0LzyxCoKX0_"
+        }
+    ]
+}

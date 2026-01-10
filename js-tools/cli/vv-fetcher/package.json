@@ -1,0 +1,17 @@
+{
+  "name": "vv-fetcher",
+  "private": true,
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "node --import tsx src/main.ts"
+  },
+  "engines": {
+    "node": ">=10",
+    "pnpm": ">=3"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "dependencies": {
+    "glob": "^13.0.0",
+    "@tools/shared": "workspace:*"
+  }
+}
