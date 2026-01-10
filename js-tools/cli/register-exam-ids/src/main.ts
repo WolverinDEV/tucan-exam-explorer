@@ -83,7 +83,7 @@ async function main() {
 
     await yargs(process.argv.slice(2))
         .option("endpoint", {
-            default: "https://explorer.tuna-systems.com/details"
+            default: "https://exam-explorer.tuna-systems.com/details"
         })
         .option("endpointKey", { string: true, demandOption: true })
         .option("tucanSessionId", { number: true, demandOption: true })
