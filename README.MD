@@ -11,12 +11,15 @@ You're not alone. And that’s exactly why this project exists.
 TUCaN's interface gives you the data for your taken exams, but not the overview.
 This repo aims to fix that by building the basis for gathering exam grade distributions, making them easier to browse, compare, and analyze.
 
-The actual grade overview data will be accessible to all TU Darmstadt students here:
-> exam-explorer.tuna-systems.com
+The actual grade overview data will be accessible to all TU Darmstadt students here:  
+[https://exam-explorer.tuna-systems.com](https://exam-explorer.tuna-systems.com)
 
-To view the grade data, you must authenticate with your TU Darmstadt student email.
+To view the grade data, you must authenticate with your TU Darmstadt student email.  
 **Your email address and any personal information will not be stored**.
 Authentication is only used to verify that you are a valid student.
+
+## Screenshots
+![01-64-1210/4 Empirische Wirtschaftsforschung](./screenshots/chrome-exam-explorer.png)
 
 ## Privacy notes
 All data collected in this repository is non-personal and non-confidential.
