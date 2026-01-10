@@ -15,7 +15,7 @@
 		})
 	);
 
-	const { form: formData, enhance, message } = $derived(form);
+	const { form: formData, enhance, message, submitting } = $derived(form);
 </script>
 
 <Card.Root class="m-auto flex w-[25em] min-w-[10em]">
@@ -30,7 +30,7 @@
 					{#snippet children({ props })}
 						<Form.Label>E-Mail</Form.Label>
 						<div class="flex flex-row">
-							<Input {...props} bind:value={$formData.email} />
+							<Input {...props} bind:value={$formData.email} disabled={$submitting} />
 							<span class="ml-[.5em] shrink-0 self-center text-sm text-foreground/70">
 								{data.emailSuffix}
 							</span>
@@ -40,7 +40,13 @@
 				<Form.Description class="text-xs">Deine E-Mail wird nicht gespeichert!</Form.Description>
 				<Form.FieldErrors />
 			</Form.Field>
-			<Form.Button class="self-end">Link senden</Form.Button>
+			<Form.Button class="self-end" disabled={$submitting}>
+				{#if $submitting}
+					Sende link...
+				{:else}
+					Link senden
+				{/if}
+			</Form.Button>
 		</form>
 		{#if $message}
 			<div class="rounded-md border border-green-800 bg-green-600/20 p-3">
