@@ -1,10 +1,15 @@
 use std::{
+    self,
     sync::Arc,
     time::Duration,
 };
 
 use anyhow::Context;
 use clap::Parser;
+use env_logger::{
+    Target,
+    WriteStyle,
+};
 use indicatif::{
     ProgressBar,
     ProgressStyle,
@@ -19,11 +24,15 @@ use tokio::{
     },
 };
 
-use crate::predictor::{
-    IdPredictor,
-    Window,
+use crate::{
+    logging::ProgressBarLogTarget,
+    predictor::{
+        IdPredictor,
+        Window,
+    },
 };
 
+mod logging;
 mod predictor;
 
 type TucanExamId = u64;
@@ -108,6 +117,10 @@ struct CliArgs {
 async fn main() -> anyhow::Result<()> {
     env_logger::builder()
         .filter_level(LevelFilter::Info)
+        .write_style(WriteStyle::Always)
+        .target(Target::Pipe(Box::new(ProgressBarLogTarget::new(
+            std::io::stdout(),
+        ))))
         .parse_default_env()
         .init();
 
@@ -154,6 +167,7 @@ async fn main() -> anyhow::Result<()> {
             pb.set_style(ProgressStyle::with_template("[{elapsed_precise}] {msg}").unwrap());
             pb.enable_steady_tick(Duration::from_millis(100));
 
+            ProgressBarLogTarget::<()>::setup_progress_bar(&pb);
             loop {
                 tokio::select! {
                     _ = tokio::time::sleep(Duration::from_secs(1)) => {},
@@ -162,15 +176,20 @@ async fn main() -> anyhow::Result<()> {
                     }
                 }
 
-                let predictor = predictor.lock().await;
-                pb.set_message(format!(
-                    "{:.2}% ({} / {})",
-                    predictor.progress() * 100.0,
-                    predictor.current_id(),
-                    predictor.end_condition()
-                ));
+                let message = {
+                    let predictor = predictor.lock().await;
+                    format!(
+                        "{:.2}% ({} / {})",
+                        predictor.progress() * 100.0,
+                        predictor.current_id(),
+                        predictor.end_condition()
+                    )
+                };
+
+                pb.set_message(message);
             }
 
+            ProgressBarLogTarget::<()>::clear_progress_bar(&pb);
             pb.finish_and_clear();
         });
 
