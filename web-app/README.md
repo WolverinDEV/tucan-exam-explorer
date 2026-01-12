@@ -1,38 +1,51 @@
-# sv
+# Exam Explorer web app
+This folder contains the Exam Explorer web application, available at:  
+https://exam-explorer.tuna-systems.com
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+The web app is written in [Svelte](https://github.com/sveltejs/) and includes a minimal backend with a database as its data source.
 
-## Creating a project
+# Developing
 
-If you're seeing this, you've probably already done this step. Congrats!
-
+After cloning the repository, install dependencies using `pnpm install`, start the development server:
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
+pnpm run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev -- --open
 ```
 
 ## Building
-
-To create a production version of your app:
+To create a production build:
 
 ```sh
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Hosting
+A Dockerized version of the app is automatically built and published at:  
+https://github.com/WolverinDEV/tucan-exam-explorer/pkgs/container/tucan-exam-explorer
+
+
+A minimal `docker-compose.yml` setup may look like this:
+```yml
+version: "3.7"
+services:
+  svelte:
+    image: ghcr.io/wolverindev/tucan-exam-explorer:master
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://postgres:my-password@database/exam-explorer
+      # Please configure the remaining environment variables based on .env.example
+
+  database:
+    image: postgres:16
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: my-password
+      POSTGRES_DB: exam-explorer
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+```
