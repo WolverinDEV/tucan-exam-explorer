@@ -1,0 +1,15 @@
+WiSe 22/23
+
+-> Stopped at 382792465786241
+[2026-01-11T12:47:18Z INFO  exam_id_scanner]  -> found exam id 382792469292253
+[2026-01-11T12:47:49Z INFO  exam_id_scanner]  -> found exam id 382792469286259
+[2026-01-11T12:53:26Z INFO  exam_id_scanner]  -> found exam id 382792469231247
+[2026-01-11T12:54:28Z INFO  exam_id_scanner]  -> found exam id 382792469220235
+[2026-01-11T12:55:21Z INFO  exam_id_scanner]  -> found exam id 382792469211241
+[2026-01-11T11:49:36Z INFO  exam_id_scanner]  -> found exam id 382792469292253
+[2026-01-11T11:53:33Z INFO  exam_id_scanner]  -> found exam id 382792469333277
+[2026-01-11T11:57:51Z INFO  exam_id_scanner]  -> found exam id 382792469373283
+[2026-01-11T11:58:01Z INFO  exam_id_scanner]  -> found exam id 382792469375265
+[2026-01-11T11:58:22Z INFO  exam_id_scanner]  -> found exam id 382792469379271
+-> stopped at 382792469869299
+ 

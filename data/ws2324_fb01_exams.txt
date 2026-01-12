@@ -1,0 +1,43 @@
+-> stopped at 386905127545721
+                                                                                                                       
+[2026-01-10T22:42:20Z INFO  exam_id_scanner]  -> found exam id 386905127734689
+[2026-01-10T22:43:54Z INFO  exam_id_scanner]  -> found exam id 386905127718707
+[2026-01-10T16:54:35Z INFO  exam_id_scanner]  -> found exam id 386905127740713
+[2026-01-10T15:38:43Z INFO  exam_id_scanner]  -> found exam id 386905127740713                                                                                                                                                    
+[2026-01-10T15:44:58Z INFO  exam_id_scanner]  -> found exam id 386905127796701                                                                                                                                                       
+[2026-01-10T15:45:09Z INFO  exam_id_scanner]  -> found exam id 386905127798695                                                                                                                                                        
+[2026-01-10T15:45:33Z INFO  exam_id_scanner]  -> found exam id 386905127802773                                                                                                                                                        
+[2026-01-10T15:45:33Z INFO  exam_id_scanner]  -> found exam id 386905127802779                                                                                                                                                         
+[2026-01-10T15:48:13Z INFO  exam_id_scanner]  -> found exam id 386905127827719                                                                                                                                                          
+[2026-01-10T15:48:38Z INFO  exam_id_scanner]  -> found exam id 386905127831753                                                                                                                                                        
+[2026-01-10T15:49:22Z INFO  exam_id_scanner]  -> found exam id 386905127838759                                                                                                                                                         
+[2026-01-10T15:50:44Z INFO  exam_id_scanner]  -> found exam id 386905127851741                                                                                                                                                         
+[2026-01-10T15:52:34Z INFO  exam_id_scanner]  -> found exam id 386905127869785                                                                                                                                                          
+[2026-01-10T15:54:39Z INFO  exam_id_scanner]  -> found exam id 386905127888735                                                                                                                                                          
+[2026-01-10T15:55:13Z INFO  exam_id_scanner]  -> found exam id 386905127893747                                                                                                                                                          
+[2026-01-10T15:55:49Z INFO  exam_id_scanner]  -> found exam id 386905127899767                                                                                                                                                         
+[2026-01-10T15:56:45Z INFO  exam_id_scanner]  -> found exam id 386905127908797                                                                                                                                                       
+[2026-01-10T16:01:15Z INFO  exam_id_scanner]  -> found exam id 386905127949851                                                                                                                                                       
+[2026-01-10T16:02:55Z INFO  exam_id_scanner]  -> found exam id 386905127965847                                                                                                                                                    
+[2026-01-10T16:03:49Z INFO  exam_id_scanner]  -> found exam id 386905127974791                                                                                                                                                      
+[2026-01-10T16:05:13Z INFO  exam_id_scanner]  -> found exam id 386905127987803                                                                                                                                                       
+[2026-01-10T16:07:33Z INFO  exam_id_scanner]  -> found exam id 386905128009907                                                                                                                                                        
+[2026-01-10T16:08:10Z INFO  exam_id_scanner]  -> found exam id 386905128015867                                                                                                                                                        
+[2026-01-10T16:09:16Z INFO  exam_id_scanner]  -> found exam id 386905128026901                                                                                                                                                      
+[2026-01-10T16:10:12Z INFO  exam_id_scanner]  -> found exam id 386905128036877                                                                                                                                                           
+[2026-01-10T16:14:00Z INFO  exam_id_scanner]  -> found exam id 386905128073857                                                                                                                                                       
+[2026-01-10T16:14:56Z INFO  exam_id_scanner]  -> found exam id 386905128083871                                                                                                                                                         
+[2026-01-10T16:16:31Z INFO  exam_id_scanner]  -> found exam id 386905128096861                                                                                                                                                         
+[2026-01-10T16:18:27Z INFO  exam_id_scanner]  -> found exam id 386905128115931                                                                                                                                                         
+[2026-01-10T16:18:30Z INFO  exam_id_scanner]  -> found exam id 386905128116913                                                                                                                                                          
+[2026-01-10T16:19:50Z INFO  exam_id_scanner]  -> found exam id 386905128128919                                                                                                                                                           
+[2026-01-10T16:20:21Z INFO  exam_id_scanner]  -> found exam id 386905128133979                                                                                                                                                          
+[2026-01-10T16:20:41Z INFO  exam_id_scanner]  -> found exam id 386905128137937                                                                                                                                                           
+[2026-01-10T16:21:15Z INFO  exam_id_scanner]  -> found exam id 386905128143949                                                                                                                                                            
+[2026-01-10T16:24:11Z INFO  exam_id_scanner]  -> found exam id 386905128170943
+[2026-01-10T16:26:33Z INFO  exam_id_scanner]  -> found exam id 386905128191961
+[2026-01-10T16:26:59Z INFO  exam_id_scanner]  -> found exam id 386905128195925                                                                                                                                                            
+[2026-01-10T16:53:29Z INFO  exam_id_scanner]  -> found exam id 386905128440107                                                                                                                                                          
+[2026-01-10T16:54:13Z INFO  exam_id_scanner]  -> found exam id 386905128448089
+                                                                               
+stopped at 386905131889137
