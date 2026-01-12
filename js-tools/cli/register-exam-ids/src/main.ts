@@ -15,7 +15,7 @@ async function loadGradeOverview(campusnet: CampusnetClient, session: CampusnetS
             examId
         ]
     });
-
+    // logger.trace(` html: ${data}`);
     const overview = parseStudentGradesDiagramm(data);
     if (!overview) {
         throw new Error("exam has not yet been concluded");
@@ -115,7 +115,7 @@ async function main() {
             logger.info(`Loading exam ids from ${argv.file}`);
             const rawExamIds = await readFile(argv.file).then(buffer => buffer.toString("utf-8"));
             const examIds = rawExamIds.split("\n")
-                .map(line => line.replaceAll(/[^0-9]/g, ""))
+                .map(line => line.match(/[0-9]{10,15}/)?.at(0))
                 .map(line => parseInt(line))
                 .filter(id => !isNaN(id));
 
