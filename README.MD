@@ -30,37 +30,38 @@ Although the process is still a bit technical at the moment, it will be simplifi
    Instructions for [Chrome](https://developer.chrome.com/docs/devtools/open#last)
 3. Switch to the Console tab and paste the following snippet:  
    <details>
-    <summary>Show Script</summary>
-    ```js
-    console.log(`Generating a list of exam ids. Please wait...`);
-    const sessionId = location.search.match(/-N(\d+)/)[1];
-    await fetch(
-        `?APPNAME=CampusNet&PRGNAME=EXAMRESULTS&ARGUMENTS=-N${sessionId},-N000325,-N999`
-    )
-        .then((response) => response.text())
-        .then((response) => {
-            if (response.includes("timeout.htm")) {
-                throw "Session timed out. Please refresh the current page.";
-            }
-    
-            const examIds = [
-                ...response
-                    .matchAll(
-                        /GRADEOVERVIEW&amp;ARGUMENTS=-N\d+,-N\d+,-AEXEV,-N(\d+)/gm
-                    )
-                    .map((match) => match[1]),
-            ];
-            console.log(
-                `Successfully grathered the following exam ids (${
-                    examIds.length
-                }):\n${examIds.join("\n")}`
-            );
-        })
-        .catch((error) => {
-            console.error(`Failed to generate a list of exam ids:`);
-            console.error(error);
-        });
-    ``` 
+      <summary>Show Script</summary>
+      
+      ```js
+      console.log(`Generating a list of exam ids. Please wait...`);
+      const sessionId = location.search.match(/-N(\d+)/)[1];
+      await fetch(
+          `?APPNAME=CampusNet&PRGNAME=EXAMRESULTS&ARGUMENTS=-N${sessionId},-N000325,-N999`
+      )
+          .then((response) => response.text())
+          .then((response) => {
+              if (response.includes("timeout.htm")) {
+                  throw "Session timed out. Please refresh the current page.";
+              }
+      
+              const examIds = [
+                  ...response
+                      .matchAll(
+                          /GRADEOVERVIEW&amp;ARGUMENTS=-N\d+,-N\d+,-AEXEV,-N(\d+)/gm
+                      )
+                      .map((match) => match[1]),
+              ];
+              console.log(
+                  `Successfully grathered the following exam ids (${
+                      examIds.length
+                  }):\n${examIds.join("\n")}`
+              );
+          })
+          .catch((error) => {
+              console.error(`Failed to generate a list of exam ids:`);
+              console.error(error);
+          });
+      ``` 
    </details>
 
 4. Create a new GitHub issue and include the generated output.  
